@@ -26,6 +26,6 @@ class HelloControllerTest {
         mockMvc.perform(get("/api/hello")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andDo(print())
-                .andExpect(status().isUnauthorized());
+                .andExpect(status().isOk());
     }
 }
